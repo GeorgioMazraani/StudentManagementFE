@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Student Management</h1>
+
+    <!-- Add Student Form -->
+    <form id="studentForm">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="courses">Enrolled Courses (comma separated):</label>
+            <input type="text" id="courses" required>
+        </div>
+        <button type="submit">Add Student</button>
+    </form>
+    <div id="success-message" class="success-message">
+        <span class="green-tick">✔</span> Student added successfully!
+    </div>
+    <form id="update-student-form">
+        <h3>Update Student</h3>
+        <input type="text" id="update-id" placeholder="Student ID to Update" required>
+        <input type="text" id="update-firstName" placeholder="New First Name">
+        <input type="text" id="update-lastName" placeholder="New Last Name">
+        <input type="date" id="update-dateOfBirth" placeholder="New Date of Birth">
+        <input type="email" id="update-email" placeholder="New Email">
+        <input type="text" id="update-courses" placeholder="New Courses (comma separated)">
+        <button type="submit" id="update-button">Update Student</button>
+        <button type="button" id="delete-button">Delete Student</button>
+    </form>
+
+    <h3>Student List</h3>
+    <div class="student-list" id="student-list"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
