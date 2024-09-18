@@ -137,3 +137,62 @@ input::placeholder {
     background-color: #333333;
     color: #ff0000;
 }
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .student-list {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    .student-list {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    #success-message {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
